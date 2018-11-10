@@ -1,12 +1,11 @@
 <template>
     <div id="weather">
-        <form @submit.prevent="getWeather(inputLocation)">
+        <form @submit.prevent="getWeather(inputLocation)" class="form">
             <input type="text" v-model="inputLocation">
             <button type="submit">Submit</button>
         </form>
-        <br>
         <div id="forecast">
-            <p v-if="temperature">
+            <p v-if="temperature" class="details">
                 Country: {{country}} <br>
                 Temperature: {{temperature}}&#8451; <br/>
                 Pressure: {{pressure}} hpa <br>
@@ -57,4 +56,18 @@ export default {
   }
 };
 </script>
+<style scoped>
+.form input[type="text"]{
+    margin-right: 25px;
+    width: 256px;
+}
+.details{
+  padding-top: 20px;
+  box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.4);
+  background-color: #fff;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+</style>
+
 

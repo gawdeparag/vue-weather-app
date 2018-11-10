@@ -1,20 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <h2>Vue Weather Forecast</h2>
+    <div class="text">
+      <img alt="Vue logo" src="./assets/logo.png">
+      <h2>Vue Weather Forecast</h2>
+    </div>
     <weather/>
   </div>
 </template>
 
 <script>
-import weather from './components/weather.vue'
+import weather from "./components/weather.vue";
+import "bootstrap/dist/css/bootstrap.css";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
     weather
   }
-}
+};
 </script>
 
 <style>
@@ -25,7 +28,10 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-img{
+img {
   height: 100px;
+}
+.text{
+  margin-bottom: 30px;
 }
 </style>

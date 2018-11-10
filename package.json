@@ -5,10 +5,15 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "bootstrap": "^4.1.3",
+    "gh-pages": "^2.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.5",
     "vue": "^2.5.17"
   },
   "devDependencies": {
@@ -40,5 +45,18 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "description": "## Gives real-time weather forecast of any valid city on Earth that you enter ## Created with Vue.js and Bootstrap",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paraggawde/vue-weather-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paraggawde/vue-weather-app/issues"
+  },
+  "homepage": "https://github.com/paraggawde/vue-weather-app#readme"
 }
