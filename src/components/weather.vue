@@ -22,7 +22,7 @@
 <script>
 import axios from "axios";
 
-let url = 'http://api.openweathermap.org'
+let url = 'https://api.openweathermap.org'
 export default {
   name: "weather",
   data: function() {
