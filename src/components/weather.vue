@@ -21,6 +21,8 @@
 
 <script>
 import axios from "axios";
+
+let url = 'http://api.openweathermap.org'
 export default {
   name: "weather",
   data: function() {
@@ -38,7 +40,7 @@ export default {
     getWeather: function(inputTitle) {
       axios
         .get(
-          "http://api.openweathermap.org/data/2.5/weather?q=" +
+          url+"/data/2.5/weather?q=" +
             inputTitle +
             "&appid=7ddbbac4414598a0582efd0c12096e75&units=metric"
         )
