@@ -50,7 +50,7 @@ export default {
           this.country = response.data.sys.country;
         })
         .catch(error => {
-          this.errorStatement = "Is this a place on earth?? Couldn't find it though! :("
+          this.errorStatement = error;
         });
     }
   }
