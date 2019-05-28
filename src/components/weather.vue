@@ -52,7 +52,7 @@ export default {
           this.country = response.data.sys.country;
         })
         .catch(error => {
-          this.errorStatement = error;
+          this.errorStatement = "Error in finding this city!";
         });
     }
   }
